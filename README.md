@@ -9,6 +9,7 @@ Boilerplate used by SantoPixel to create projects. Frontend (HTML, CSS) and Word
 - ImageMin to compress images
 
 ### Directory Strcture ###
+```
 /site
     /fonts (custom fonts like icomoon)
     /images (add your images, after build they will be compressed)
@@ -22,7 +23,7 @@ Boilerplate used by SantoPixel to create projects. Frontend (HTML, CSS) and Word
 /wordpress (WordPress in 4.9.8)
     /wp-content/themes
         Use this folder to create your theme from scratch. 
-
+```
 ### How to use ###
 #### Preparing your FrontEnd ####
 
