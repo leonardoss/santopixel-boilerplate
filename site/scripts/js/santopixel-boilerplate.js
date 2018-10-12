@@ -14,7 +14,7 @@ window.SPBoilerplate = window.SPBoilerplate || {};
         },       
     };
 
-    Almap.app = function () {
+    SPBoilerplate.app = function () {
         return {
             Init: function () {
                 

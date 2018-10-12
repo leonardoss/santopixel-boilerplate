@@ -25,7 +25,23 @@ Boilerplate used by SantoPixel to create projects. Frontend (HTML, CSS) and Word
         Use this folder to create your theme from scratch. 
 ```
 ### How to use ###
-#### Preparing your FrontEnd ####
+#### How to run ####
+Install node dependencies (node v8.11.4)
+```
+npm install
+```
 
+Run frontend (with gulp installed globally)
+```
+gulp
+```
 
-#### Preparing your WordPress theme ####
+Build your project
+```
+gulp deploy
+```
+It will generate a /dist folder and in /wordpress/wp-content/themes/santopixel-boilerplate-wp-theme with your bundle files (CSS and JS) and images.
+
+#### Tips ####
+#### Run WP locally ####
+You can use a MAMP and point directly to the theme folder
