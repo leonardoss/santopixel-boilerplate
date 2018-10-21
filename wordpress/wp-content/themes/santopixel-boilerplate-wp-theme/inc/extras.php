@@ -35,45 +35,6 @@ function frontend_wp_theme_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'frontend_wp_theme_wp_title', 10, 2 );
 
-
-function codex_custom_init() {
-    $args1 = array(
-      'label'  => 'Advogados',
-	  'supports'           => array( 'title', 'author', 'thumbnail'),
-
-		'public' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_nav_menus' => true,
-		'publicly_queryable' => true,
-		'exclude_from_search' => false,
-		'has_archive' => true,
-		'query_var' => true,
-		'can_export' => true,
-		'rewrite' => true,
-		'capability_type' => 'post'
-    );
-    $args2 = array(
-      'label'  => 'Áreas de atuação',
-	  'supports'           => array( 'title', 'editor', 'author', 'thumbnail'),
-
-  		'public' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_nav_menus' => true,
-		'publicly_queryable' => true,
-		'exclude_from_search' => false,
-		'has_archive' => true,
-		'query_var' => true,
-		'can_export' => true,
-		'rewrite' => true,
-		'capability_type' => 'post'
-    );
-    register_post_type( 'advogado', $args1 );
-    register_post_type( 'areas', $args2 );
-}
-add_action( 'init', 'codex_custom_init' );
-
 /**
  * Sets the authordata global when viewing an author archive.
  *
