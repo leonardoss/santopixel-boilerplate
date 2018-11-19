@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Boilerplate used by SantoPixel to create projects.",
     "author": "Leonardo Souza",
+    "bin": {
+        "sp": "./cli.js"
+    },
     "devDependencies": {
         "browser-sync": "^2.18.5",
         "gulp": "^3.9.1",
